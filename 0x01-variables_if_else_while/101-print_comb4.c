@@ -1,16 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
+
 /**
- *main - entry
- *return: 0 (success)
-*/
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n, m, i;
+	int n, m, l;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-		for (n = 48; n < 58; n++)
+	for (n = 48; n < 58; n++)
 	{
 		for (m = 49; m < 58; m++)
 		{
@@ -33,3 +31,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
