@@ -3,13 +3,12 @@
 #include <stdio.h>
 /**
  *main - entry point
- *return: 0 (success)
+ *Return: 0 (success)
 */
 int main(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	int ch;
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
 	for (ch = 'A'; ch <= 'Z'; ch++)
@@ -17,3 +16,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
