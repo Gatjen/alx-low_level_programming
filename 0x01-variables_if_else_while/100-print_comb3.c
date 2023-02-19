@@ -1,16 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- *main - entry
- *return: 0 (success)
-*/
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	int n, m;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
 	for (n = 48; n <= 56; n++)
 	{
 		for (m = 49; m <= 57; m++)
@@ -28,6 +25,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
+
